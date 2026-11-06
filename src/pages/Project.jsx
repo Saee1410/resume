@@ -8,7 +8,7 @@ import {
 } from "framer-motion";
 
 import SaptapadiImg from "../assets/saptpadi.jpg";
-import InternAreaImg from "../assets/internarea.jpg";
+import InternAreaImg from "../assets/ina.jpg";
 import DevMeetImg from "../assets/devmeet.jpg";
 
 const projects = [
