@@ -1,3 +1,4 @@
+
 import { useRef } from "react";
 import {
   motion,
@@ -99,11 +100,11 @@ function ProjectCard({ project, index }) {
         rotateY,
         transformPerspective: 1000,
       }}
-      className={`group relative rounded-2xl border border-white/10 bg-[#100a1a] p-6 md:p-7 overflow-hidden transition-colors duration-500 hover:border-[#a855f7]/60 ${
+      className={`group relative overflow-hidden rounded-2xl border border-white/10 bg-[#100a1a] p-6 transition-colors duration-500 hover:border-[#a855f7]/60 md:p-7 ${
         project.featured ? "lg:col-span-2" : ""
       }`}
     >
-      {/* Animated Gradient Glow */}
+      {/* Animated Purple Glow */}
       <motion.div
         aria-hidden="true"
         className="pointer-events-none absolute -right-20 -top-20 h-48 w-48 rounded-full bg-[#a855f7]/15 blur-3xl"
@@ -188,7 +189,6 @@ function ProjectCard({ project, index }) {
 
         {/* Project Links */}
         <div className="flex flex-wrap items-center gap-5 border-t border-white/10 pt-5">
-
           <a
             href={project.github}
             target="_blank"
@@ -213,7 +213,6 @@ function ProjectCard({ project, index }) {
               Live demo coming soon
             </span>
           )}
-
         </div>
       </div>
     </motion.article>
@@ -226,7 +225,7 @@ export default function Projects() {
       id="projects"
       className="relative overflow-hidden bg-[#05000d] px-6 py-24 text-white md:px-12 lg:px-20"
     >
-      {/* Background Glow */}
+      {/* Background Purple Glow */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute left-0 top-1/4 h-72 w-72 rounded-full bg-[#a855f7]/10 blur-[120px]"
@@ -248,7 +247,6 @@ export default function Projects() {
           </p>
 
           <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
-
             <h2 className="text-4xl font-black tracking-tight md:text-6xl">
               Featured{" "}
               <span className="text-[#a855f7]">Projects.</span>
@@ -258,7 +256,6 @@ export default function Projects() {
               A selection of projects where I explore full-stack development,
               real-time systems and AI-powered applications.
             </p>
-
           </div>
         </motion.div>
 
@@ -289,6 +286,7 @@ export default function Projects() {
     </section>
   );
 }
+
 
 // import { useRef } from "react";
 // import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
